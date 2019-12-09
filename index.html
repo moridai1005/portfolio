@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link href="js/slick-theme.css" rel="stylesheet" type="text/css">
+<link href="js/slick.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<link href="https://unpkg.com/sanitize.css" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- BootstrapのCSS読み込み -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!-- jQuery読み込み -->
+<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- BootstrapのJS読み込み -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+<title>Daisuke Mori's PortFolio!</title>
+</head>
+
+  <body>
+    <header>
+      <header-wrapper id="home">
+        <h1 class="logo-name">Daisuke Mori's</h1>
+        <h1 class="logo-port">PORTFOLIO</h1>
+        <h1 class="logo-desc">大学生ブロガー・プログラマー</h1>
+      </header-wrapper>
+    </header>
+
+    <nav>
+      <ul>
+        <li class="li-btn"><a class="btn" href="#home"><span class="fas fa-home"></span>HOME</a></li>
+        <li class="li-btn"><a class="btn" href="#profile"><span class="fas fa-user"></span>PROFILE</a></li>
+        <li class="li-btn"><a class="btn" href="#skill"><span class="fas fa-tools"></span>SKILL</a></li>
+        <li class="li-btn"><a class="btn" href="#works"><span class="fas fa-clipboard-list"></span>WORKS</a></li>
+        <li  class="li-btn" id="last"><a  class="btn" href="#contact"><span class="fas fa-address-card"></span>CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <div class="main">
+
+      <div class="profile-wrapper">
+        <profile id="profile">
+          <h1><span class="fa fa-user"></span><br>PROFILE</h1>
+          <div class="profile-content">
+            <img class="myphoto" src="myphoto.JPG">
+            <div class="profile-text">
+              <p>はじめまして。<br>22歳国公立大学4年のもりだいと申します。<br>
+                Web系言語は始めたてで勉強中です。
+              </p>
+              <p class="left">
+                ・<span class="titleofp">専攻</span> 情報科学<br>
+                ・<span class="titleofp">研究</span> 自然言語処理<br>
+                ・<span class="titleofp">言語</span> Python, HTML&CSS, jQuery, PHP
+              </p>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </profile>
+      </div>
+
+      <skill id="skill">
+        <div class="skill-wrapper">
+          <h1><span class="fas fa-tools"></span><br>SKILLS</h1>
+          <ul>
+
+            <li class="each">
+                <h2>HTML&CSS</h2>
+                <img src="html.jpg">
+                <p class="desc">スキルレベル ★★★☆☆<br>
+                  経験年数 1年未満</p>
+                <p class="eachbox">コーディングはそこそこできる方だと思っています。
+                  このサイトもすべて自分でコーディングしています。<br>
+                  レスポンシブデザインも対応可能です。                
+                </p>
+            </li>
+
+            <li class="each">
+                <h2>Javascript・jQuery</h2>
+                <img src="jquery.png">
+                <p class="desc">スキルレベル ★★★☆☆<br>
+                  経験年数 1年未満</p>
+                <p class="eachbox">jQueryを使ったWebサイトの作成はまだまだ勉強中の身ではありますが、
+                  最低限のコーディングは可能です。
+                  このサイトのほとんどすべての動きもjQueryを用いて自分でコーディングしました。
+                </p>
+            </li>
+
+            <li class="each">
+                <h2>PHP</h2>
+                <img src="php.png">
+                <p class="desc">スキルレベル ★★☆☆☆
+                  <br>
+                  経験年数 1年未満
+                </p>
+                <p class="eachbox">
+                  PHPはまだまだ勉強中です。簡単なものならコーディング可能ですが、
+                  複雑なものは多少の時間を要するかもしれません。
+                  今後力を入れて学習していく予定です。
+                </p>
+            </li>
+
+            <li class="each">
+                <h2>Python3</h2>
+                <img src="python.png">
+                <p class="desc">スキルレベル ★★★★☆<br>
+                  経験年数 1年以上2年未満</p>
+                <p class="eachbox">Pythonについては、研究でずっと使っているため、
+                  かなり技術は向上しています。<br>
+                  特に機械学習分野、ChainerやSVMを使うものはデータさえあればすぐに
+                  プログラムを作成できます。
+                </p>
+            </li>
+
+          </ul>
+        </div>
+
+      </skill>
+
+      <works id="works">
+        <div class="works-wrapper">
+          <h1><span class="fas fa-clipboard-list"></span><br>
+            WORKS
+          </h1>
+
+          <ul class="slide">
+            <li><img src="portfolio.png"></li>
+          </ul>
+        </div>
+
+      </works>
+
+      <contact id="contact">
+        <div class="contact-wrapper">
+          <h1><span class="fa fa-address-card"></span><br>
+            CONTACT
+          </h1>
+
+          <p><a href="mailto:moridai1005@yahoo.co.jp">Email : moridai1005@yahoo.co.jp</a></p>
+          <p>or</p>
+          <div class="contact-icon">
+            <a href="https://www.instagram.com/moridai1005/"><span class="fab fa-instagram"></span></a>
+            <a href="#"><span class="fab fa-facebook-square"></span></a>
+            <a href="https://github.com/moridai1005/"><span class="fab fa-github"></span></a>
+          </div>
+        </div>
+      </contact>
+    </div>
+
+    <footer>
+      <div class="footer-wrapper">
+        <ul>
+          <li class="li-btn"><a href="#home">HOME</a></li>
+          <li class="li-btn"><a href="#profile">PROFILE</a></li>
+          <li class="li-btn"><a href="#skill">SKILL</a></li>
+          <li class="li-btn"><a href="#works">WORKS</a></li>
+          <li class="li-btn"><a href="#contact">CONTACT</a></li>
+        </ul>
+        <small>copyright &copy; 2019 Daisuke Mori.<br>All right reserved.</small>
+      </div>
+    </footer>
+
+  </body>
+</html>
