@@ -1,5 +1,13 @@
 $(function () {
 
+  setTimeout(function() {
+    $('.start p').fadeIn(1300);
+  },500);
+
+  setTimeout(function() {
+    $('.start').fadeOut(1000);
+  },3000);
+
   $('.slide').slick({
     autoplay:true,
     autoplaySpeed:4000,
