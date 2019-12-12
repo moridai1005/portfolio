@@ -42,6 +42,17 @@ $(function () {
     }
   });
 
+  $('.hid .li-btn').click( 
+    function () {
+      if ($('.hid').is(':visible')) {
+        $('.hid').fadeOut(200);
+        $('.toolbar').removeClass('actual',3000);
+      } else {
+        event.stopPropagation();
+      }
+    });
+  
+
   if (window.matchMedia( '(max-width:700px)' ).matches) {
     $(function() {
       $('.acc').click(function () {
