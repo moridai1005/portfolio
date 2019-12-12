@@ -15,17 +15,6 @@ $(function () {
     fade:true,
   });
 
-  $('.each').hover(
-    function() {
-      $(this).find('.eachbox').fadeIn();
-      $(this).find('.acc').html('詳細を非表示<a><span class="fas fa-arrow-up"></span></a>');
-      $(this).find('.acc').addClass("dummy");
-    },
-    function() {
-      $(this).find('.eachbox').fadeOut();
-    }
-  );
-
   $('.li-btn').click(
     function() {
       var hre = $(this).find('a').attr('href');
@@ -52,6 +41,42 @@ $(function () {
       event.stopPropagation();
     }
   });
+
+  if (window.matchMedia( '(max-width:700px)' ).matches) {
+    $(function() {
+      $('.acc').click(function () {
+        if($(this).parents('.each').find('.eachbox').hasClass('open'))
+        {
+          $(this).parents('.each').find('.eachbox').fadeOut();
+          $(this).parents('.each').find('.eachbox').removeClass('open');
+          $(this).html('詳細を表示<a><span class="fas fa-arrow-down"></span></a>');
+        }
+        else{
+          $(this).parents('.each').find('.eachbox').fadeIn();
+          $(this).parents('.each').find('.eachbox').addClass('open')
+          $(this).html('詳細を非表示<a><span class="fas fa-arrow-up"></span></a>');
+        }
+      });
+
+    });
+  }
+  else{
+    $('.each').hover(
+      function() {
+        $(this).find('.eachbox').fadeIn();
+        $(this).find('.eachbox').addClass('open');
+        $(this).find('.acc').html('詳細を非表示<a><span class="fas fa-arrow-up"></span></a>');
+        $(this).find('.acc').addClass("dummy");
+      },
+      function() {
+        $(this).find('.eachbox').fadeOut();
+        $(this).find('.eachbox').removeClass('open');
+        $(this).find('.acc').html('詳細を表示<a><span class="fas fa-arrow-down"></span></a>');
+        $(this).find('.acc').removeClass("dummy");
+      }
+    );
+    console.log(false);
+  }
 
 
 });
