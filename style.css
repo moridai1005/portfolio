@@ -3,6 +3,7 @@
 a {
   text-decoration: none !important;
   /*color:#333333 !important;*/
+  cursor:pointer;
 }
 
 li {
@@ -301,6 +302,8 @@ contact a:hover {
   opacity:0.7;
 }
 
+
+
 /*---------
 footer
 -----------*/
@@ -355,6 +358,7 @@ start
   width:100%;
   z-index:1000;
   text-align:center;
+  z-index:9998;
 }
 
 .start p {
@@ -366,4 +370,139 @@ start
   top:50%;
   left:50%;
   position:fixed;
+}
+
+.toolbar {
+  display:none;
+  position:fixed;
+  top:15px;
+}
+
+.actual {
+  background-color:#444;
+  color:#cecece;
+  border-bottom:1px solid #cecece;
+}
+
+
+
+.hid {
+  display:none;
+  z-index:5000;
+}
+
+.detail {
+  display:none;
+}
+
+.detail a {
+  color:#444;
+}
+
+.detail a:hover {
+  color:#444;
+}
+
+/*
+responsive
+*/
+@media screen and (max-width:670px) {
+
+  header {
+    width:100%;
+  }
+
+  .main {
+    width:100% !important;
+  }
+
+  .profile-content {
+    flex-direction: column;
+    padding:0 !important;
+    margin:0 auto;
+    border-style:none;
+  }
+
+  profile img {
+    width:200px;
+    height:200px;
+    margin:0 auto;
+  }
+
+  .profile-text {
+    width:100%;
+    text-align:left;
+  }
+
+  .profile-text p {
+    padding:0;
+    font-size:24px;
+  }
+
+  .logo-port {
+    font-size:50px !important;
+  }
+
+
+  .navi ul {
+    display:none;
+  }
+
+  .toolbar {
+    display:block;
+    z-index:3000;
+  }
+
+  .hid ul {
+    flex-direction: column;
+    padding:0;
+    margin:0;
+  }
+
+  .toolbar {
+    width:100%;
+  }
+
+  .hid ul li {
+    width:100%;
+    border-style:none;
+    border-top:1px solid #cecece
+  }
+
+
+  .hide ul li a {
+    font-size:20px;
+  }
+
+  .toolbar p{
+    font-size:30px;
+    padding-left:8px;
+    margin:0;
+  }
+
+  .skill-wrapper ul {
+    flex-direction: column;
+    margin:0 auto;
+  }
+
+  .skill-wrapper li {
+    width: 100%;  
+  }
+
+  works img {
+    width:80%;
+    height:100px;
+  }
+
+  .detail {
+    display:block;
+  }
+
+  .desc {
+    padding-bottom:10px;
+  }
+
+  .acc {
+    padding-bottom:10px;
+  }
 }

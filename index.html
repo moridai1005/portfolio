@@ -2,16 +2,18 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+
 <link href="js/slick-theme.css" rel="stylesheet" type="text/css">
 <link href="js/slick.css" rel="stylesheet" type="text/css">
 <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
-<link href="https://unpkg.com/sanitize.css" rel="stylesheet">
+<link href="https://unpkg.com/sanitize.css" rel="stylesheet" media="screen and (min-width:671px">
 <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- BootstrapのCSS読み込み -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <!-- jQuery読み込み -->
@@ -32,14 +34,28 @@
     </header>
 
     <nav>
-      <ul>
-        <li class="li-btn"><a class="btn" href="#home"><span class="fas fa-home"></span>HOME</a></li>
-        <li class="li-btn"><a class="btn" href="#profile"><span class="fas fa-user"></span>PROFILE</a></li>
-        <li class="li-btn"><a class="btn" href="#skill"><span class="fas fa-tools"></span>SKILL</a></li>
-        <li class="li-btn"><a class="btn" href="#works"><span class="fas fa-clipboard-list"></span>WORKS</a></li>
-        <li  class="li-btn" id="last"><a  class="btn" href="#contact"><span class="fas fa-address-card"></span>CONTACT</a></li>
-      </ul>
+      <div class="navi">
+        <ul>
+          <li class="li-btn"><a class="btn" href="#home"><span class="fas fa-home"></span>HOME</a></li>
+          <li class="li-btn"><a class="btn" href="#profile"><span class="fas fa-user"></span>PROFILE</a></li>
+          <li class="li-btn"><a class="btn" href="#skill"><span class="fas fa-tools"></span>SKILL</a></li>
+          <li class="li-btn"><a class="btn" href="#works"><span class="fas fa-clipboard-list"></span>WORKS</a></li>
+          <li  class="li-btn" id="last"><a  class="btn" href="#contact"><span class="fas fa-address-card"></span>CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="toolbar">
+          <p><span class="fa fa-bars"></span></p>
+          <div class="hid">
+            <ul>
+                <li class="li-btn"><a href="#home"><span class="fas fa-home"></span>HOME</a></li>
+                <li class="li-btn"><a href="#profile"><span class="fas fa-user"></span>PROFILE</a></li>
+                <li class="li-btn"><a href="#skill"><span class="fas fa-tools"></span>SKILL</a></li>
+                <li class="li-btn"><a href="#works"><span class="fas fa-clipboard-list"></span>WORKS</a></li>
+                <li  class="li-btn" id="last"><a href="#contact"><span class="fas fa-address-card"></span>CONTACT</a></li>
+            </ul>
+          </div>
     </nav>
+
 
     <div class="main">
 
@@ -73,6 +89,11 @@
                 <img src="html.jpg">
                 <p class="desc">スキルレベル ★★★☆☆<br>
                   経験年数 1年未満</p>
+                  <div class="detail">
+                    <p class="acc">詳細を表示
+                      <a><span class="fas fa-arrow-down"></span></a>
+                    </p>
+                  </div>
                 <p class="eachbox">コーディングはそこそこできる方だと思っています。
                   このサイトもすべて自分でコーディングしています。<br>
                   レスポンシブデザインも対応可能です。                
@@ -84,6 +105,11 @@
                 <img src="jquery.png">
                 <p class="desc">スキルレベル ★★★☆☆<br>
                   経験年数 1年未満</p>
+                  <div class="detail">
+                      <p class="acc">詳細を表示
+                        <a><span class="fas fa-arrow-down"></span></a>
+                      </p>
+                  </div>
                 <p class="eachbox">jQueryを使ったWebサイトの作成はまだまだ勉強中の身ではありますが、
                   最低限のコーディングは可能です。
                   このサイトのほとんどすべての動きもjQueryを用いて自分でコーディングしました。
@@ -97,6 +123,11 @@
                   <br>
                   経験年数 1年未満
                 </p>
+                <div class="detail">
+                    <p class="acc">詳細を表示
+                      <a><span class="fas fa-arrow-down"></span></a>
+                    </p>
+                </div>
                 <p class="eachbox">
                   PHPはまだまだ勉強中です。簡単なものならコーディング可能ですが、
                   複雑なものは多少の時間を要するかもしれません。
@@ -109,6 +140,11 @@
                 <img src="python.png">
                 <p class="desc">スキルレベル ★★★★☆<br>
                   経験年数 1年以上2年未満</p>
+                  <div class="detail">
+                      <p class="acc">詳細を表示
+                        <a><span class="fas fa-arrow-down"></span></a>
+                      </p>
+                  </div>
                 <p class="eachbox">Pythonについては、研究でずっと使っているため、
                   かなり技術は向上しています。<br>
                   特に機械学習分野、ChainerやSVMを使うものはデータさえあればすぐに
