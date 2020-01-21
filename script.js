@@ -1,5 +1,6 @@
 $(function () {
 
+
   setTimeout(function() {
     $('.start p').fadeIn(1300);
   },500);
@@ -23,12 +24,23 @@ $(function () {
   );
 
   $('.toolbar .fa-bars').click( 
+
     function() {
+      var sc = $(window).scrollTop();
+
+      var h_sc = $('header').height();
       if ($('.hid').is(':visible')) {
       $('.hid').fadeOut(10);
       $('.toolbar').removeClass('actual');
+
+      if (sc > h_sc){
+      $('.fa-bars').css('color','#444');
+      }else{
+        $('.fa-bars').css('color','#cecece');
+      }
     } else {
       $('.toolbar').addClass('actual');
+      $('.fa-bars').css('color','#cecece');
       $('.hid').fadeIn();
     }}
   )
@@ -89,5 +101,17 @@ $(function () {
     console.log(false);
   }
 
+  $(window).scroll(function() {
+    var sc = $(this).scrollTop();
+
+    var h_sc = $('header').height();
+
+    if (sc <= h_sc-20){
+      $('.fa-bars').css('color','#cecece');
+    }
+    else {
+      $('.fa-bars').css('color','#444');
+    }
+  })
 
 });

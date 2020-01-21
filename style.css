@@ -376,12 +376,17 @@ start
   display:none;
   position:fixed;
   top:15px;
+  z-index:9000;
 }
 
 .actual {
   background-color:#444;
   color:#cecece;
   border-bottom:1px solid #cecece;
+}
+
+.fa-bars {
+  z-index:9999;
 }
 
 
@@ -463,10 +468,14 @@ responsive
     width:100%;
   }
 
+  .fa-bars {
+    color:#cecece;
+  }
+
   .hid ul li {
     width:100%;
     border-style:none;
-    border-top:1px solid #cecece
+    border-top:1px solid #cecece;
   }
 
 
@@ -491,7 +500,7 @@ responsive
 
   works img {
     width:80%;
-    height:100px;
+    height:auto;
   }
 
   .detail {
