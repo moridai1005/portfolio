@@ -9,12 +9,23 @@ $(function () {
     $('.start').fadeOut(1000);
   },3000);
 
-  $('.slide').slick({
+  $('.slider').slick({
     autoplay:true,
     autoplaySpeed:4000,
     dots:true,
     fade:true,
+    arrows:true,
+    asNavFor:'.thumb',
   });
+
+  $('.thumb').slick({
+    asNavFor:'.slider',
+    focusOnSelect:true,
+    slidesToShow: 2,
+    slidesToScroll:1,
+  });
+
+
 
   $('.li-btn').click(
     function() {
@@ -98,7 +109,6 @@ $(function () {
         $(this).find('.acc').removeClass("dummy");
       }
     );
-    console.log(false);
   }
 
   $(window).scroll(function() {

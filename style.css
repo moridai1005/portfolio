@@ -257,10 +257,56 @@ works ul {
   margin-top:50px;
 }
 
-works ul li img {
+works .slider  li img {
   width:70%;
-  height:300px;
+  height:auto;
   margin:0 auto;
+  border:1px solid #444;
+  border-radius:10px;
+  padding:10px;
+}
+
+.thumb img {
+  width:100%;
+  height:auto;
+  margin:0 auto;
+}
+
+.slick-prev {
+  left:40px;
+  z-index:100;
+}
+
+.slick-next {
+  right:40px;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 30px;
+    line-height: 1;
+
+    opacity: .75;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slider  p {
+  font-size:30px;
+  color:white;
+  background-color:#444;
+  width:30%;
+  margin:0 auto;
+  border-radius:15px;
+  margin-top:5px;
+}
+
+.slider a { 
+  color:white;
 }
 
 /*---------
@@ -514,4 +560,19 @@ responsive
   .acc {
     padding-bottom:10px;
   }
+
+  .slider p {
+    width:70%;
+    font-size:26px;
+  }
+
+  .slick-prev {
+    left:10px;
+    z-index:100;
+  }
+  
+  .slick-next {
+    right:10px;
+  }
+
 }
