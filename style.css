@@ -266,6 +266,12 @@ works .slider  li img {
   padding:10px;
 }
 
+.thumb {
+  display:flex;
+  width:50%;
+  margin:0 auto;
+}
+
 .thumb img {
   width:100%;
   height:auto;
@@ -296,7 +302,7 @@ works .slider  li img {
 }
 
 .slider  p {
-  font-size:30px;
+  font-size:24px;
   color:white;
   background-color:#444;
   width:30%;
@@ -563,7 +569,7 @@ responsive
 
   .slider p {
     width:70%;
-    font-size:26px;
+    font-size:18px;
   }
 
   .slick-prev {
